@@ -1,6 +1,6 @@
 {
   "name": "react-each",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "A simple component used for rendering collections and arrays.",
   "authors": [
     "Brandon Sara (https://bsara.pro)"
