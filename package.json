@@ -1,0 +1,43 @@
+{
+  "name": "react-each",
+  "version": "1.0.0-beta.0",
+  "description": "A simple component used for rendering collections and arrays.",
+  "authors": [
+    "Brandon Sara (https://bsara.pro)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bsara/react-each#readme",
+  "repository": "bsara/react-each",
+  "bugs": {
+    "url": "https://github.com/bsara/react-each/issues"
+  },
+  "keywords": [
+    "react",
+    "each",
+    "foreach",
+    "list",
+    "array"
+  ],
+  "main": "index.js",
+  "module": "index.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "bump": "npm --no-git-tag-version version prerelease",
+    "bump:major": "npm --no-git-tag-version version major",
+    "bump:minor": "npm --no-git-tag-version version minor",
+    "bump:patch": "npm --no-git-tag-version version patch",
+    "postversion": "npx update-version-comment-refs && npx push-version-comment-refs",
+    "prepublishOnly": "git push && npx tag-version",
+    "postpublish": "npm run bump"
+  },
+  "devDependencies": {
+    "npm-scripts-versioning": "^1.0.0-beta.8"
+  },
+  "dependencies": {
+    "aguid": "^2.0.0",
+    "call-if-defined": "^1.0.0",
+    "prop-types": ">=15.6.0",
+    "react": ">=16.2.0",
+    "valyou": "^1.2.1"
+  }
+}
