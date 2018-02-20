@@ -35,9 +35,9 @@
   },
   "dependencies": {
     "aguid": "^2.0.0",
-    "call-if-defined": "^1.0.0",
+    "call-if-defined": "^1.1.0",
     "prop-types": ">=15.6.0",
-    "react": ">=16.2.0",
+    "react": ">=16.0.0",
     "valyou": "^1.2.1"
   }
 }

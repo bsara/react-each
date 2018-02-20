@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import aguid from 'aguid';
+import valyou from 'valyou';
 import { callIfDefinedNull } from 'call-if-defined';
 
 
 
-export default class Each extends React.PureComponent {
+export default class Each extends React.Component {
 
   constructor(...args) {
     super(...args);
@@ -17,7 +18,7 @@ export default class Each extends React.PureComponent {
 
 
   render() {
-    const items = this.props.items;
+    const items = valyou(this.props.items);
 
     if (items == null || items.length === 0) {
       return callIfDefinedNull(this.props.else);
@@ -33,7 +34,7 @@ export default class Each extends React.PureComponent {
 
 
 Each.propTypes = {
-  items:      PropTypes.array,
+  items:      PropTypes.oneOfType([PropTypes.array, PropTypes.func]),
   renderItem: PropTypes.func.isRequired,
   else:       PropTypes.func
 };

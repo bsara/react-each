@@ -9,16 +9,10 @@ the 'map' function of your item array!". So, here are the reasons that you might
 component instead of the `map` function:
 
 - Since you're using a component, you can "connect" it using `connect` from the
-  `redux-react` library, allowing only rerenders of a changed list, rather than
-  rerendering the entire component that contains the list of items used for
-  rendering.
-- This is a [`PureComponent`](https://reactjs.org/docs/react-api.html#reactpurecomponent);
-  thus, you can save unnecessary render calls (potentially a lot of them) when the items
-  array hasn't changed.
+  `redux-react` library.
 - You have the ability to cleanly implement rendering when the items array is either not
   defined or empty *(see `else` prop below)*.
-- You may find it a more clean way to render a list with a more natural feeling "inline"
-  JSX syntax.
+- You may find that your JSX code is more clean and easier to read.
 
 
 [Changelog](https://github.com/bsara/react-each/blob/master/CHANGELOG.md)
@@ -57,9 +51,7 @@ export default function MyComponent(props) {
 
 ## Props
 
-> **NOTE:** This component is a [`PureComponent`](https://reactjs.org/docs/react-api.html#reactpurecomponent).
-
-- **items** `?Array`
+- **items** `?(Array|Function)`
 
   Array of items (or function which returns an array of items) to use for rendering.
 
