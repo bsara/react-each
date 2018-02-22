@@ -5,8 +5,8 @@
 > A simple React component used for rendering collections and arrays.
 
 When you see this component, you may be asking "Why did you make this? You can just use
-the 'map' function of your item array!". So, here are the reasons that you might use this
-component instead of the `map` function:
+the 'map' function of your item array!". So, **here are the reasons that you might use
+this component instead of the `map` function:**
 
 - Since you're using a component, you can "connect" it using `connect` from the
   `redux-react` library.
