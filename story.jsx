@@ -104,7 +104,7 @@ class _TestComponent extends React.Component {
     return (
       <div>
         <div>
-          <a href="https://github.com/bsara/react-each/blob/master/story.jsx">View story source</a>
+          <a href="https://github.com/bsara/react-each/blob/master/story.jsx#L139-L156">View story source</a>
         </div>
 
         <br/>
