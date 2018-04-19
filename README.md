@@ -12,7 +12,9 @@ this component instead of the `map` function:**
   `redux-react` library.
 - You have the ability to cleanly implement rendering when the items array is either not
   defined or empty *(see `else` prop below)*.
-- You may find that your JSX code is more clean and easier to read.
+- You may find that your JSX code is more clean and easier to read *(though, I would
+  recommend using `map` if you don't need this for the first two reasons that have been
+  listed for efficiency reasons)*.
 
 
 [Storybook](https://bsara.github.io/react-each)
